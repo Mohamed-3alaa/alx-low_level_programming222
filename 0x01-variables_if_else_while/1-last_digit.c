@@ -13,11 +13,14 @@
 
 int main(void)
 {
-	int n, digit;
+	int n;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	digit = n % 10;
+
+	int digit = n % 10;
+
+	printf("digit of %d is ", n);
 
 	if (digit > 5)
 		printf("last digit of %i is %i and is greater than 5\n", n, digit);
